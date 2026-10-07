@@ -1,16 +1,12 @@
 """Skapar csv-filer med valresultatet från valmyndighetens json-filer.
 
 Sverige betraktas som tre träd, ett per valtyp. Riket är roten och
-valdistrikten är löven. Nivåerna inom parentes finns bara där kommunen
-eller regionen är indelad i valkretsar:
+valdistrikten är löven. Nivåerna inom parentes finns inte överallt i trädet
+(se vagar_rd, vagar_rf och vagar_kf):
 
     RD: riket, riksdagsvalkrets, kommun, (kommunvalkrets), valdistrikt
-    RF: riket, region, (regionvalkrets), kommun, (kommunvalkrets), valdistrikt
+    RF: riket, region, (regionvalkrets), (kommun), (kommunvalkrets), valdistrikt
     KF: riket, län, kommun, (kommunvalkrets), valdistrikt
-
-Ett undantag: i RF är Stockholms kommun delad mellan sex regionvalkretsar.
-Där saknas kommunen i trädet, och kommunvalkretsarna ligger direkt under
-regionvalkretsarna (se vagar_rf).
 
 En nods kod är inte unik ens inom ett träd. Ett uppsamlingsdistrikt har till
 exempel samma kod som sin kommunvalkrets, och i RF har regionvalkretsen 1401

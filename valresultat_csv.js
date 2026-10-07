@@ -7,11 +7,11 @@ beskrivning av träden och filnamnen; koden här följer den funktion för
 funktion, med samma namn i camelCase.
 
 Sverige betraktas som tre träd, ett per valtyp. Riket är roten och
-valdistrikten är löven. Nivåerna inom parentes finns bara där kommunen
-eller regionen är indelad i valkretsar:
+valdistrikten är löven. Nivåerna inom parentes finns inte överallt i trädet
+(se vagarRd, vagarRf och vagarKf):
 
     RD: riket, riksdagsvalkrets, kommun, (kommunvalkrets), valdistrikt
-    RF: riket, region, (regionvalkrets), kommun, (kommunvalkrets), valdistrikt
+    RF: riket, region, (regionvalkrets), (kommun), (kommunvalkrets), valdistrikt
     KF: riket, län, kommun, (kommunvalkrets), valdistrikt
 
 Varje nod får en csv-fil, t ex output-csv/S/RD_10_1080_S.csv, med nodens
